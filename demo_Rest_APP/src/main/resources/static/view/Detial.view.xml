@@ -1,0 +1,274 @@
+<mvc:View
+  controllerName="project1.controller.Detail"
+  class="sapUiSizeCompact" xmlns:core="sap.ui.core" xmlns:u="sap.ui.unified" xmlns:mvc="sap.ui.core.mvc"
+xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form" 
+xmlns:table="sap.ui.table" xmlns:commons="sap.ui.commons" 
+
+	xmlns:html="http://www.w3.org/1999/xhtml"
+>
+  <Page
+    id="page"
+    title="{i18n>titleCreate}"
+  >
+    <!-- <content>
+      <VBox class="sapUiSmallMargin">
+        <form:SimpleForm
+          id="SimpleFormChange354"
+          editable="true"
+          layout="ResponsiveGridLayout"
+          title="Address"
+          labelSpanXL="2"
+          labelSpanL="2"
+          labelSpanM="3"
+          labelSpanS="12"
+          adjustLabelSpan="false"
+          emptySpanXL="0"
+          emptySpanL="0"
+          emptySpanM="0"
+          emptySpanS="0"
+          columnsXL="2"
+          columnsL="2"
+          columnsM="1"
+          singleContainerFullSize="false"
+        >
+          <Label text="ID" />
+          <Input value="{HouseNumber}">
+            <layoutData>
+              <l:GridData span="XL1 L2 M4 S4" />
+            </layoutData>
+          </Input>
+          <Label text="Company Name" />
+          <Input value="{HouseNumber}">
+            <layoutData>
+              <l:GridData span="XL1 L2 M4 S4" />
+            </layoutData>
+          </Input>
+          <Label text="Contact Name" />
+          <Input value="{HouseNumber}">
+            <layoutData>
+              <l:GridData span="XL1 L2 M4 S4" />
+            </layoutData>
+          </Input>
+          <Label text="First Name" />
+          <Input value="{HouseNumber}">
+            <layoutData>
+              <l:GridData span="XL1 L2 M4 S4" />
+            </layoutData>
+          </Input>
+          <Label text="Last Name" />
+          <Input value="{HouseNumber}">
+            <layoutData>
+              <l:GridData span="XL1 L2 M4 S4" />
+            </layoutData>
+          </Input>
+          <Label text="Middle Name" />
+          <Input value="{HouseNumber}">
+            <layoutData>
+              <l:GridData span="XL1 L2 M4 S4" />
+            </layoutData>
+          </Input>
+          <Label text="Status" />
+          <Input value="{HouseNumber}">
+            <layoutData>
+              <l:GridData span="XL1 L2 M4 S4" />
+            </layoutData>
+          </Input>
+          <Label text="Registration Number" />
+          <Input value="{HouseNumber}">
+            <layoutData>
+              <l:GridData span="XL1 L2 M4 S4" />
+            </layoutData>
+          </Input>
+          <Label text="Phone Number" />
+          <Input value="{HouseNumber}">
+            <layoutData>
+              <l:GridData span="XL1 L2 M4 S4" />
+            </layoutData>
+          </Input>
+          <Label text="Email ID" />
+          <Input value="{HouseNumber}">
+            <layoutData>
+              <l:GridData span="XL1 L2 M4 S4" />
+            </layoutData>
+          </Input>
+          <Label text="Country" />
+          <Input value="{HouseNumber}">
+            <layoutData>
+              <l:GridData span="XL1 L2 M4 S4" />
+            </layoutData>
+          </Input>
+          <Label text="City" />
+          <Input value="{HouseNumber}">
+            <layoutData>
+              <l:GridData span="XL1 L2 M4 S4" />
+            </layoutData>
+          </Input>
+        </form:SimpleForm>
+      </VBox>
+    </content> -->
+    <f:SimpleForm id="phoneFormSimple1" editable="true" layout="ResponsiveGridLayout" title="">
+                                <f:content>
+                                    <VBox id="_IDGenVBox1" alignItems="End" class="sapUiTinyMarginTop">
+                                        <Label id="_IDGenLabel1" text="ID:" ></Label>
+                                        <layoutData>
+                                            <l:GridData id="_IDGenGridData1" span="XL2 L2 M2 S6" />
+                                        </layoutData>
+                                    </VBox>
+                                    <Input id="_IDGenInput1" type="Text" enabled="false" value="{initial>/id}">
+                                        <layoutData>
+                                            <l:GridData id="_IDGenGridData2" span="XL4 L4 M4 S6" />
+                                        </layoutData>
+                                    </Input>
+                                    
+                                    <VBox id="_IDGenVBox2" alignItems="End" class="sapUiTinyMarginTop">
+                                        <Label id="_IDGenLabel2" text="Company Name:" ></Label>
+                                        <layoutData>
+                                            <l:GridData id="_IDGenGridData3" span="XL2 L2 M2 S6" />
+                                        </layoutData>
+                                    </VBox>
+                                    <Input id="_IDGenInput2" type="Text" enabled="true" value="{initial>/CpmanyName}">
+                                        <layoutData>
+                                            <l:GridData id="_IDGenGridData4" span="XL4 L4 M4 S6" />
+                                        </layoutData>
+                                    </Input>
+
+                                    <VBox id="_IDGenVBox3" alignItems="End" class="sapUiTinyMarginTop">
+                                        <Label id="_IDGenLabel3" text="Contact Name:" ></Label>
+                                        <layoutData>
+                                            <l:GridData id="_IDGenGridData5" span="XL2 L2 M2 S6" />
+                                        </layoutData>
+                                    </VBox>
+                                    <Input id="_IDGenInput3" type="Text" enabled="true" value="{initial>/ContactName}">
+                                        <layoutData>
+                                            <l:GridData id="_IDGenGridData6" span="XL4 L4 M4 S6" />
+                                        </layoutData>
+                                    </Input>
+
+                                    <VBox id="_IDGenVBox4" alignItems="End" class="sapUiTinyMarginTop">
+                                        <Label id="_IDGenLabel4" text="First Name:" ></Label>
+                                        <layoutData>
+                                            <l:GridData id="_IDGenGridData7" span="XL2 L2 M2 S6" />
+                                        </layoutData>
+                                    </VBox>
+                                    <Input id="_IDGenInput4" type="Text" enabled="true" value="{initial>/fisrtName}">
+                                        <layoutData>
+                                            <l:GridData id="_IDGenGridData8" span="XL4 L4 M4 S6" />
+                                        </layoutData>
+                                    </Input>
+
+                                    <VBox id="_IDGenVBox5" alignItems="End" class="sapUiTinyMarginTop">
+                                        <Label id="_IDGenLabel5" text="Last Name:" ></Label>
+                                        <layoutData>
+                                            <l:GridData id="_IDGenGridData9" span="XL2 L2 M2 S6" />
+                                        </layoutData>
+                                    </VBox>
+                                    <Input id="_IDGenInput5" type="Text" enabled="true" value="{initial>/lastName}">
+                                        <layoutData>
+                                            <l:GridData id="_IDGenGridData10" span="XL4 L4 M4 S6" />
+                                        </layoutData>
+                                    </Input>
+
+                                    <VBox id="_IDGenVBox6" alignItems="End" class="sapUiTinyMarginTop">
+                                        <Label id="_IDGenLabel6" text="Middle Name:" ></Label>
+                                        <layoutData>
+                                            <l:GridData id="_IDGenGridData11" span="XL2 L2 M2 S6" />
+                                        </layoutData>
+                                    </VBox>
+                                    <Input id="_IDGenInput6" type="Text" enabled="true" value="{initial>/middleName}">
+                                        <layoutData>
+                                            <l:GridData id="_IDGenGridData12" span="XL4 L4 M4 S6" />
+                                        </layoutData>
+                                    </Input>
+
+                                    <VBox id="_IDGenVBox7" alignItems="End" class="sapUiTinyMarginTop">
+                                        <Label id="_IDGenLabel7" text="Status:" ></Label>
+                                        <layoutData>
+                                            <l:GridData id="_IDGenGridData13" span="XL2 L2 M2 S6" />
+                                        </layoutData>
+                                    </VBox>
+                                    <Input id="_IDGenInput7" type="Text" enabled="true" value="{initial>/status}">
+                                        <layoutData>
+                                            <l:GridData id="_IDGenGridData14" span="XL4 L4 M4 S6" />
+                                        </layoutData>
+                                    </Input>
+
+                                    <VBox id="_IDGenVBox8" alignItems="End" class="sapUiTinyMarginTop">
+                                        <Label id="_IDGenLabel8" text="Registration Number:" ></Label>
+                                        <layoutData>
+                                            <l:GridData id="_IDGenGridData15" span="XL2 L2 M2 S6" />
+                                        </layoutData>
+                                    </VBox>
+                                    <Input id="_IDGenInput8" type="Text" enabled="true" value="{initial>/regNo}">
+                                        <layoutData>
+                                            <l:GridData id="_IDGenGridData16" span="XL4 L4 M4 S6" />
+                                        </layoutData>
+                                    </Input>
+
+                                    <VBox id="_IDGenVBox9" alignItems="End" class="sapUiTinyMarginTop">
+                                        <Label id="_IDGenLabel9" text="Phone Number:" ></Label>
+                                        <layoutData>
+                                            <l:GridData id="_IDGenGridData17" span="XL2 L2 M2 S6" />
+                                        </layoutData>
+                                    </VBox>
+                                    <Input id="_IDGenInput9" type="Text" enabled="true" value="{initial>/Phone}">
+                                        <layoutData>
+                                            <l:GridData id="_IDGenGridData18" span="XL4 L4 M4 S6" />
+                                        </layoutData>
+                                    </Input>
+
+                                    <VBox id="_IDGenVBox10" alignItems="End" class="sapUiTinyMarginTop">
+                                        <Label id="_IDGenLabel10" text="Email ID:" ></Label>
+                                        <layoutData>
+                                            <l:GridData id="_IDGenGridData19" span="XL2 L2 M2 S6" />
+                                        </layoutData>
+                                    </VBox>
+                                    <Input id="_IDGenInput10" type="Text" enabled="true" value="{initial>/email}">
+                                        <layoutData>
+                                            <l:GridData id="_IDGenGridData20" span="XL4 L4 M4 S6" />
+                                        </layoutData>
+                                    </Input>
+
+                                    <VBox id="_IDGenVBox11" alignItems="End" class="sapUiTinyMarginTop">
+                                        <Label id="_IDGenLabel11" text="Country:" ></Label>
+                                        <layoutData>
+                                            <l:GridData id="_IDGenGridData21" span="XL2 L2 M2 S6" />
+                                        </layoutData>
+                                    </VBox>
+                                    <Input id="_IDGenInput11" type="Text" enabled="true" value="{initial>/country}">
+                                        <layoutData>
+                                            <l:GridData id="_IDGenGridData22" span="XL4 L4 M4 S6" />
+                                        </layoutData>
+                                    </Input>
+                                    
+									<VBox id="_IDGenVBox12" alignItems="End" class="sapUiTinyMarginTop">
+                                        <Label id="_IDGenLabel12" text="City:" ></Label>
+                                        <layoutData>
+                                            <l:GridData id="_IDGenGridData2123" span="XL2 L2 M2 S6" />
+                                        </layoutData>
+                                    </VBox>
+                                    <Input id="_IDGenInput12" type="Text" enabled="true" value="{initial>/city}">
+                                        <layoutData>
+                                            <l:GridData id="_IDGenGridData2223" span="XL4 L4 M4 S6" />
+                                        </layoutData>
+                                    </Input>
+                                  
+                                    
+                                </f:content>
+                            </f:SimpleForm>
+    <footer>
+      <OverflowToolbar id="_IDGenOverflowToolbar1">
+        <ToolbarSpacer id="_IDGenToolbarSpacer1" />
+        <Button id="_IDGenButton1"
+          text="Submit"
+          type="Accept"
+          press="onCreateSingle"
+        />
+        <Button id="_IDGenButton2"
+          text="Reject"
+          type="Reject"
+        />
+        <Button id="_IDGenButton3" text="back" />
+      </OverflowToolbar>
+    </footer>
+  </Page>
+</mvc:View>

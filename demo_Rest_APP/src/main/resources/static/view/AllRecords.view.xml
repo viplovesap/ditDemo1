@@ -1,0 +1,103 @@
+<mvc:View controllerName="project1.controller.AllRecords"
+  
+	xmlns="sap.ui.table"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:u="sap.ui.unified"
+	xmlns:c="sap.ui.core"
+	xmlns:m="sap.m"
+    height="100%">
+	<m:Page
+		showHeader="false"
+		enableScrolling="false"
+		class="sapUiContentPadding">
+		<m:content>
+			<Table
+				rows="{TableDataModel>/}"
+				
+				selectionMode="Single"
+				paste="onPaste"
+				ariaLabelledBy="title">
+				<extension>
+					<m:OverflowToolbar style="Clear">
+						<m:Title id="title" text="Vendors"/>
+					</m:OverflowToolbar>
+				</extension>
+				<columns>
+					<Column width="11rem">
+						<m:Label text="ID" />
+						<template>
+							<m:Text text="{TableDataModel>id}" wrapping="false" />
+						</template>
+					</Column>
+					<Column width="11rem">
+						<m:Label text="Company Name" />
+						<template>
+							<m:Input value="{TableDataModel>CpmanyName}"/>
+						</template>
+					</Column>
+					<Column width="6rem" hAlign="End">
+						<m:Label text="Contact Name" />
+						<template>
+							<m:Label text="{TableDataModel>ContactName}" />
+						</template>
+					</Column>
+					<Column width="9rem">
+						<m:Label text="First Name" />
+						<template>
+							<m:Input value="{TableDataModel>fisrtName}"/>
+						</template>
+					</Column>
+					<Column width="9rem">
+						<m:Label text="Last name" />
+						<template>
+							<m:Input value="{TableDataModel>lastName}"/>
+						</template>
+					</Column>
+					<Column width="12rem">
+						<m:Label text="Middle Name" />
+						<template>
+							<m:Input value="{TableDataModel>middleName}"/>
+						</template>
+					</Column>
+					<Column width="9rem">
+						<m:Label text="Status" />
+						<template>
+							<m:Input value="{TableDataModel>status}"/>
+						</template>
+					</Column>
+					<Column width="9rem">
+						<m:Label text="Registration Number" />
+						<template>
+							<m:Input value="{TableDataModel>regNo}"/>
+						</template>
+					</Column>
+					<Column width="7rem">
+						<m:Label text="Phone Number" />
+						<template>
+							<m:Input value="{TableDataModel>Phone}"/>
+						</template>
+					</Column>
+					<Column width="12rem">
+						<m:Label text="Email ID" />
+						<template>
+							<m:Input value="{TableDataModel>email}"/>
+						</template>
+					</Column>
+					<Column width="12rem">
+						<m:Label text="Country" />
+						<template>
+							<m:Input value="{TableDataModel>country}"/>
+						</template>
+					</Column>
+					<Column width="6rem" hAlign="Center">
+						<m:Label text="City" />
+						<template>
+							<m:Input value="{TableDataModel>city}"/>
+						</template>
+					</Column>
+					
+				</columns>
+			</Table>
+		</m:content>
+	</m:Page>
+</mvc:View>

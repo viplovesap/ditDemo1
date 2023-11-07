@@ -1,0 +1,26 @@
+<mvc:View controllerName="project1.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content>
+        
+    <GenericTile id="mytile" header="Create Vendor in BRM Application" press="onCreateVendor">
+    <tileContent ></tileContent>
+    </GenericTile>
+
+    <GenericTile id="mytile1" header="Search Vendor in BRM Application" press="onSearchVendor">
+    <tileContent ></tileContent>
+    </GenericTile>
+
+    <GenericTile id="mytile2" header="delete Vendor in BRM Application (Coming Soon)" press="onCreateVendor">
+    <tileContent ></tileContent>
+    </GenericTile>
+
+    <GenericTile id="mytile3" header="Update Vendor in BRM Application(Coming Soon)" press="onCreateVendor">
+    <tileContent ></tileContent>
+    </GenericTile>
+
+        </content>
+        
+    </Page>
+</mvc:View>
